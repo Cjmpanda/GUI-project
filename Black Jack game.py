@@ -34,7 +34,7 @@ class BlackjackGame:
         self.restart_button.grid(row=4, column=0, columnspan=2, pady=10)
 
     def create_deck(self):
-        ranks = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A']
+        ranks = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A']
         suits = ['Hearts', 'Diamonds', 'Clubs', 'Spades']
         deck = [{'rank': rank, 'suit': suit} for rank in ranks for suit in suits]
         random.shuffle(deck)
